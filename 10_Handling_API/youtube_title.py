@@ -9,8 +9,8 @@ def youtube_title():
     if data["success"] and "data" in data:
         user_data = data["data"]
         
-        random_index = random.randint(0, 10)
-        # print(random_index)
+        random_index = random.randint(0, 9)
+        print(random_index)
         title = user_data["data"][random_index]["items"]["snippet"]["title"]
         return title
     else:
